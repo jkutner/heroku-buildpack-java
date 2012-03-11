@@ -74,6 +74,6 @@ if [ "true" == $KEEP_M2_CACHE ]; then
   done
 fi
 
-for DIR in ".m2" ".maven" ".gem" ; do
+for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
